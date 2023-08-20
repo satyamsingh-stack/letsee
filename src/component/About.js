@@ -23,7 +23,7 @@ const About=()=> {
 
                   <div class="team-item">
                   
-                      {/* <img src="/src/components/img.jpg" />                */}
+                      <img src="/src/components/img.jpg" />               
                       <h3>Satyam Singh</h3>            
                       <div class="team-info"><p>Founder</p></div>
                       <p>Satyam Singh is our founder and has developed this web-app, he is a full-stack Software developer</p>
