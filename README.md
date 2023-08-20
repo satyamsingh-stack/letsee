@@ -1,7 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App].
-
+First of all run npm i
+then run npm install react
 ## Available Scripts
 
 In the project directory, you can run:
