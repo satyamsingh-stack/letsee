@@ -1,18 +1,38 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
-    const collectData = () => {
-        alert("Name: "+name)
-        alert("Password: "+ password)
-        alert("Email: "+ email)
-        
-        // Clear the form data by resetting the state variables
-        setName("");
-        setPassword("");
-        setEmail("");
+    const nevigate = useNavigate()
+    const collectData = async () => {
+
+        try {
+            let result = await fetch('http://localhost:5000/register', {
+                method: 'POST',
+                body: JSON.stringify({ name, email, password }),
+                headers: {
+                    'Content-type': 'application/json',
+                },
+            });
+    
+            if (!result.ok) {
+                // Handle non-200 HTTP response statuses here
+                console.error('HTTP Error:', result.status, result.statusText);
+            } else {
+                result = await result.json()
+                console.warn(result);
+                // Clear the form data by resetting the state variables
+                if(result)
+                    nevigate('/');
+                setName("");
+                setPassword("");
+                setEmail("");
+            }
+        } catch (error) {
+            console.error('Fetch Error:', error);
+        }
     }
     return (
         <div className="register">
