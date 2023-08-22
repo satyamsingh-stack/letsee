@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import img2 from "./img2.jpg"
+import img from "./img.jpg"
 
 
 const About=()=> {
@@ -19,11 +21,11 @@ const About=()=> {
                           
                     </div> 
              
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6col-md-4">
 
                   <div class="team-item">
                   
-                      <img src="/src/components/img.jpg" />               
+                      <img src={img} />               
                       <h3>Satyam Singh</h3>            
                       <div class="team-info"><p>Founder</p></div>
                       <p>Satyam Singh is our founder and has developed this web-app, he is a full-stack Software developer</p>
@@ -47,11 +49,11 @@ const About=()=> {
                 </div>
             </div> 
               
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6col-md-4">
 
                   <div class="team-item">
                   
-                      <img src="" class="team-img" alt="pic" />
+                      <img src={img2} class="team-img" alt="pic" />
                      
                       <h3>Prathistha Mishra</h3>
                       
