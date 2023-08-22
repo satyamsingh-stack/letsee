@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Signup from './component/Signup';
 import About from './component/About';
 import Contact from './component/Contact';
+import PrivateComponent from './component/PrivateComponent';
+import Login from './component/Login';
 
 function App() {
   return (
@@ -12,11 +14,14 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="logout" element={<h1>Logout</h1>} />
-          <Route path="/about" element={<About /> } />
+          <Route element = {<PrivateComponent />}>
+            <Route path="/" element={<h1>Home</h1>} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="logout" element={<h1>Logout</h1>} />
+            <Route path="/about" element={<About /> } />
+          </Route>
           <Route path="/signup" element={<Signup />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
       </BrowserRouter>
       <Foot />

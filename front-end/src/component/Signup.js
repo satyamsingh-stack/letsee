@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
@@ -6,6 +6,11 @@ const Signup = () => {
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
     const nevigate = useNavigate()
+    useEffect(()=>{
+        const auth = localStorage.getItem('user');
+        if(auth)
+            nevigate('/');
+    })
     const collectData = async () => {
 
         try {
@@ -24,6 +29,7 @@ const Signup = () => {
                 result = await result.json()
                 console.warn(result);
                 // Clear the form data by resetting the state variables
+                localStorage.setItem("user",JSON.stringify(result));
                 if(result)
                     nevigate('/');
                 setName("");
