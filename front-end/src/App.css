@@ -23,6 +23,18 @@
   background-color: skyblue;
 }
 
+.nav-right{
+	text-align: right;
+}
+
+.logo{
+	width: 45px;
+	float: left;
+	border-radius: 50px;
+	margin-top: 3px;
+	margin-left: 20px;	
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -38,6 +50,28 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.login{
+	margin-left: 30%;
+	margin-top: 100px;
+}
+
+.inputBox{
+	padding: 7px;
+	display: block;
+	border: 1px solid skyblue;
+	width: 300px;
+	margin: 20px;
+}
+
+.appButton{
+	margin: 20px;
+	width: 150px;
+	padding: 10px;
+	background-color: skyblue;
+	border: solid 1px;
+	cursor: pointer;
 }
 
 .App-link {
