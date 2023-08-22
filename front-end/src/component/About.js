@@ -63,9 +63,9 @@ const About=()=> {
                   
                       <ul class="team-icon">
                     
-                          <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="https://www.linkedin.com/in/pratishtha-mishra-6a9b06213/" class="instagram"><i class="fa fa-instagram"></i></a></li>
                           
-                          <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="https://github.com/mishrajuhi" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
                           
                       </ul>
                       

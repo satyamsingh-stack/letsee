@@ -114,6 +114,9 @@
 
 
 }
+img{
+	border-radius: 50%;
+}
 
 
 .team-item:hover{
