@@ -135,8 +135,15 @@ img{
 	-webkit-transition: all .25s ease-in-out;
 }
 
+.section-title{
+	color: white;
+	text-align: center;
+}
+
 .section-subtitle {
 	white-space: pre-line;
+	color: white;
+	text-align: center;
  }
 
 .team-item:hover h3{
@@ -227,17 +234,21 @@ ul.team-icon li a.github{
 	transition: all 0.25s ease-in-out;
 }
 
-.container{
-	background-color: lightblue;
-}
+/* .container{
+	background-color: hsl(216, 19%, 16%);
+} */
 
 .contact_container, .register {
 	width: 100%;
 	height: 100vh;
-	background: #001600;
+	background: hsl(216, 19%, 16%);
 	display:flex;
 	align-items:center;
 	justify-content: center;
+}
+
+.about_container{
+	background: hsl(216, 19%, 16%);
 }
 
 form{

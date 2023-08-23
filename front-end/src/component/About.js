@@ -9,7 +9,7 @@ const About=()=> {
     return (
       <section class="section-white">
  
-    <div class="container">
+    <div class="about_container">
 
         <div class="row">
        
@@ -25,7 +25,9 @@ const About=()=> {
 
                   <div class="team-item">
                   
-                      <img src={img} />               
+                      <img 
+                       alt="Satyam"
+                       src={img} />               
                       <h3>Satyam Singh</h3>            
                       <div class="team-info"><p>Founder</p></div>
                       <p>Satyam Singh is our founder and has developed this web-app, he is a full-stack Software developer</p>

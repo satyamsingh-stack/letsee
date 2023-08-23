@@ -1,0 +1,21 @@
+body {
+    background-color: hsl(216, 19%, 16%);
+    ;
+    margin: 0;
+    /* This removes default margin for the body */
+    padding: 0;
+    /* This removes default padding for the body */
+}
+
+.image-area {
+    float: right;
+    /* Fix the image to the right */
+    transform: rotateY(180deg);
+    /* Rotate the image 180 degrees (left to right) */
+}
+
+.text-part h1,
+.text-part span {
+    color: rgba(79, 219, 14, 0.856);
+    /* Set the text color to red */
+}
