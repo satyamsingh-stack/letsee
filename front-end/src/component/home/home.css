@@ -7,15 +7,96 @@ body {
     /* This removes default padding for the body */
 }
 
-.image-area {
-    float: right;
-    /* Fix the image to the right */
-    transform: rotateY(180deg);
-    /* Rotate the image 180 degrees (left to right) */
-}
+/* width */
+::-webkit-scrollbar {
+    width: 0.625rem;
+    background-color: lightblue;
+    outline: 1px solid slategrey;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: lightblue;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue;
+  }
+  
+/* .banner area */
 
-.text-part h1,
-.text-part span {
-    color: rgba(79, 219, 14, 0.856);
-    /* Set the text color to red */
-}
+#banner {
+    margin: 0 auto;
+  }
+  
+  .banner {
+    height: 80vh;
+    align-items: center;
+    z-index: 588;
+  }
+  .banner .text-area {
+    margin-top: 5rem;
+    grid-column: span 2;
+    z-index: 500;
+  }
+  .banner .text-area .text-part h1 {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+  }
+  .banner .text-area .text-part h1 span {
+    color: hsl(179, 93%, 44%);
+  }
+  .banner .text-area .text-part p {
+    color: hsl(0, 0%, 78%);
+    margin-bottom: 1rem;
+  }
+
+  .banner .image-area {
+    margin-top: 5rem;
+    grid-column: span 2;
+    position: relative;
+  }
+  .banner .image-area img {
+    z-index: 400;
+    transform: scaleX(-1);
+    float: right;
+  }
+  .banner .image-area .circle {
+    position: absolute;
+    top: -0.9375rem;
+    left: 3.75rem;
+    width: 10rem;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    border-radius: 500rem;
+    z-index: -1;
+    border: none;
+  }
+
+  @media (max-width: 63.9375em) {
+    .banner {
+      padding: 1rem 2.5rem;
+      height: 60vh;
+    }
+  }
+  @media (max-width: 70.625rem) {
+    .banner {
+      padding: 1rem 3.75rem;
+    }
+  }
+  @media (max-width: 50.625em) {
+    .banner {
+      margin-top: 2.5rem;
+      padding: 1rem 1.25rem;
+      height: auto;
+      row-gap: 2rem;
+    }
+    .banner .text-area {
+      grid-column: span 4;
+    }
+    .banner .image-area {
+      grid-column: span 4;
+    }
+  }
