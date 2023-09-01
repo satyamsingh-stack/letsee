@@ -29,7 +29,7 @@ const Signup = () => {
                 result = await result.json()
                 console.warn(result);
                 // Clear the form data by resetting the state variables
-                localStorage.setItem("user",JSON.stringify(result));
+                // localStorage.setItem("user",JSON.stringify(result));
                 if(result)
                     nevigate('/');
                 setName("");
