@@ -10,6 +10,7 @@ import Login from './component/Login';
 import Home from './component/home/home'
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
+import Oops from './component/oops/oops';
 
 const steps = [
   {
@@ -47,7 +48,7 @@ const steps = [
 
 // Creating our own theme
 const theme = {
-  background: '#C9FF8F',
+  background: 'skyblue',
   headerBgColor: '#197B22',
   headerFontSize: '20px',
   botBubbleColor: '#0F3789',
@@ -84,6 +85,7 @@ function App() {
         <Routes>
           <Route element={<PrivateComponent />}>
             <Route path="/" element={<Home />} />
+            <Route path="/oops" element={<Oops />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="logout" element={<h1>Logout</h1>} />
             <Route path="/about" element={<About />} />
@@ -92,7 +94,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
         </Routes>
       </BrowserRouter>
-      <Foot />
+      {/* <Foot /> */}
     </div>
   );
 }
