@@ -1,0 +1,25 @@
+.marque{
+    color: yellowgreen;
+}
+
+.heading{
+    color: red;
+    margin-left: 1%;
+    text-align: center;
+}
+
+.para{
+    color: white;
+    text-align: center;
+}
+
+.extra{
+    color: burlywood;
+    margin-left: 1%;
+    text-align: center;
+}
+
+.note{
+    color: yellow;
+    text-align: center;
+}
